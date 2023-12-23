@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+              <h1 id="title" class="text-center">PSB Survey Form</h1>
+              <p id="description" class="description-text-center">This survey is to ensure highest quality of service in our institution. Thank you for your contribution for helping us improve.</p>
+            </header>
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter name here" required>
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter email here" required>
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number">Age (optional)</label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+              </div>
+              <div class="form-group">
+                <p>Which option describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select current role<option>
+                  <option value="student">Student</option>
+                  <option value="job">Full-time job</option>
+                  <option value="partjob">Part-time job</option>
+                  <option value="learner">Full-time learner</option>
+                  <option value="Nosay">Prefer not to disclose</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>Would you recommend PSB to a friend and/or relative?</p>
+                <label>
+                  <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
+                </label>
+                <label>
+                  <input name="user-recommend" value="Maybe" type="radio" class="input-radio">Maybe
+                </label>
+                <label>
+                  <input name="user-recommend" value="nah" type="radio" class="input-radio">Nah
+                </label>
+              </div>
+              <div class="form-group">
+                <p>What is your favorite thing about PSB?</p>
+                <select id="most-like" name="mostlike" class="form-control" required>
+                  <option disabled selected value>Select an option<option>
+                  <option value="teach">Teaching method</option>
+                  <option value="pro">Professionalism</option>
+                  <option value="service">Service</option>
+                  <option value="community">Community</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>What would you like to see improved? (check all that apply)</p>
+                <label>
+                  <input name="prefer" value="duration" type="checkbox" class="input-checkbox">Longer class duration
+                </label>
+                <label>
+                  <input name="prefer" value="practice" type="checkbox" class="input-checkbox">More chapter wise practices
+                </label>
+                <label>
+                  <input name="prefer" value="notes" type="checkbox" class="input-checkbox">Improved notes
+                </label>
+                <label>
+                  <input name="prefer" value="classroom" type="checkbox" class="input-checkbox">Bigger classrooms
+                </label>
+                <label>
+                  <input name="prefer" value="mock" type="checkbox" class="input-checkbox">More mock tests
+                </label>
+                <label>
+                  <input name="prefer" value="entertainment" type="checkbox" class="input-checkbox">Better entertainment facilities
+                </label>
+                <label>
+                  <input name="prefer" value="computer" type="checkbox" class="input-checkbox">Upgraded PCs for practice
+                </label>
+                <label>
+                  <input name="prefer" value="clean" type="checkbox" class="input-checkbox">Improved cleanliness
+                </label>
+                <label>
+                  <input name="prefer" value="wifi" type="checkbox" class="input-checkbox">Better WiFi
+                </label>
+                <label>
+                  <input name="prefer" value="culture" type="checkbox" class="input-checkbox">Improved cultural facilities
+                </label>
+              </div>
+              <div class="form-group">
+                <p>Any comments and/or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...."></textarea>
+              </div>
+              <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </form>
+        </div>
+    </body>
+</html>
